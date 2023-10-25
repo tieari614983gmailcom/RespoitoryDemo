@@ -1,0 +1,12 @@
+<template>
+        <h1>Welcome to My First LWC</h1>
+        <p>This is a simple Lightning Web Component.</p>
+
+        <!-- Display a button -->
+        <lightning-button label="Click Me" title="Click me" onclick={handleButtonClick}></lightning-button>
+
+        <!-- Display a dynamic message -->
+        <div if:true={showMessage}>
+            <p>{message}</p>
+        </div>
+</template>
